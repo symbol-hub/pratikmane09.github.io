@@ -91,6 +91,35 @@ p {
     line-height: 1.8;
 }
 
+ul li {
+    margin-bottom: 12px;
+}
+
+/* View Button Styling */
+.view-button {
+    background-color: #ff4b2b;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-left: 15px;
+}
+
+.view-button:hover {
+    background-color: #ff416c;
+    transform: scale(1.05);
+}
+
+/* Certifications layout if needed */
+.certification-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* Contact */
 #contact {
     text-align: center;
@@ -118,5 +147,11 @@ p {
         margin-left: 0;
         width: 100%;
         padding: 20px;
+    }
+
+    .certification-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
 }
